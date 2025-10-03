@@ -1,5 +1,8 @@
-<!doctype html><html lang="ja" data-theme="light"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>生理用品無料配布プロジェクト | ひらめきラボ</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
@@ -18,72 +21,191 @@
     font-size: 18px;
     font-weight: 600;
   }
+  .project-meta {
+    background: var(--chipbg);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: grid;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .project-meta .meta-row {
+    display: grid;
+    gap: 8px;
+  }
+  .project-meta dt {
+    font-weight: 700;
+    color: var(--brand);
+    letter-spacing: 0.02em;
+  }
+  .project-meta dd {
+    margin: 0;
+    font-weight: 600;
+  }
   .project-section {
     background: var(--chipbg);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
-    padding: 16px;
+    padding: 20px;
     margin-top: 20px;
-    height: 100%;
   }
   .project-section h3 {
     background: var(--brand);
     color: white;
-    padding: 8px 16px;
+    padding: 8px 20px;
     border-radius: 999px;
     display: inline-block;
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
-  .project-grid {
+  .overview-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 22px;
-    align-items: stretch;
+    gap: 20px;
+  }
+  .overview-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .topic-item {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius);
+    padding: 16px;
+    border: 1px solid var(--stroke);
+  }
+  .topic-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .poster-area {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .poster-area img {
+    border-radius: var(--radius);
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 640px) {
+    .project-meta .meta-row {
+      grid-template-columns: 180px 1fr;
+      align-items: baseline;
+    }
   }
   @media (min-width: 768px) {
-    .project-grid {
-      grid-template-columns: 1fr 1fr;
+    .overview-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
-</head><body>
-<header class="header"><div class="container nav">
-<a class="brand" href="../index.html#members"><img alt="Hirameki Lab" src="../assets/img/logo.svg"><strong>ひらめきラボ</strong></a>
-<nav class="nav-links"><a href="../index.html#projects">Projects</a><a href="../index.html#members">Members</a><a href="../tools.html">便利ツール</a><a href="../index.html#about">About</a><a href="../index.html#contact" class="btn">Contact</a>
-<div class="theme-switch"><label for="themeSelect">Theme</label><select id="themeSelect" class="theme-select"><option value="light">ライト</option><option value="dark">ダーク</option><option value="eco">エコ</option></select></div>
-</nav><button class="toggle" aria-label="メニュー">Menu</button></div></header>
-<main><section><div class="container">
-  <div class="project-header">
-    <p class="small">セルフプロジェクトの活動報告</p>
-    <h2>生理用品無料配布プロジェクト</h2>
-    <p class="subtitle">〜女子学生も過ごしやすい学校作り〜</p>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="../index.html#members">
+      <img alt="Hirameki Lab" src="../assets/img/logo.svg">
+      <strong>ひらめきラボ</strong>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#members">Members</a>
+      <a href="../tools.html">便利ツール</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact" class="btn">Contact</a>
+      <div class="theme-switch">
+        <label for="themeSelect">Theme</label>
+        <select id="themeSelect" class="theme-select">
+          <option value="light">ライト</option>
+          <option value="dark">ダーク</option>
+          <option value="eco">エコ</option>
+        </select>
+      </div>
+    </nav>
+    <button class="toggle" aria-label="メニュー">Menu</button>
   </div>
+</header>
+<main>
+  <section>
+    <div class="container">
+      <div class="project-header">
+        <p class="small">セルフプロジェクトの活動報告</p>
+        <h2>生理用品無料配布プロジェクト</h2>
+        <p class="subtitle">〜女子学生も過ごしやすい学校作り〜</p>
+      </div>
 
-  <div class="project-section">
-    <h3>プロローグ</h3>
-    <p>理系の学部が多い本学では、女性特有の悩みを相談できる相手が少ない。そこで、女性同士でも話すことが少ない「生理」に着目し、生理に関する悩みを少しでも解消し、学校生活を快適にすることを目的にプロジェクトを始動した。</p>
-  </div>
+      <dl class="project-meta">
+        <div class="meta-row">
+          <dt>活動名</dt>
+          <dd>生理用品無料配布プロジェクト</dd>
+        </div>
+        <div class="meta-row">
+          <dt>活動期間</dt>
+          <dd>トライアル期間 2025/1/20–1/25（常時設置に向け準備中）</dd>
+        </div>
+        <div class="meta-row">
+          <dt>中心学生</dt>
+          <dd>理工学部の有志学生チーム</dd>
+        </div>
+      </dl>
 
-  <div class="project-grid">
-    <div class="project-section">
-      <h3>学外からの取材</h3>
-      <p>セルフプロジェクトの取り組みについての取材記事。わかもと製薬、毎日新聞の2社に取材していただいた。学外からも注目していただけて、プロジェクトへの士気が高まった。これからも影響力のある活動を行いたい。</p>
+      <div class="project-section">
+        <h3>概要</h3>
+        <div class="overview-grid">
+          <div class="overview-item">
+            <h4>背景</h4>
+            <p>理系の学部が多い本学では女性特有の悩みを相談できる相手が少なく、デリケートな話題である生理についても共有する機会が限られていた。そこで、悩みを少しでも解消し、学校生活を快適にすることを目的にプロジェクトを始動した。</p>
+          </div>
+          <div class="overview-item">
+            <h4>内容</h4>
+            <p>理工学部生の強みを活かして配布機のシステムを自作し、利用方法や設置場所、備品の補充オペレーションを含めた仕組みを整備。初期メンバーが卒業する前に設置まで完了させ、利用者の声を収集できる環境を整えた。</p>
+          </div>
+          <div class="overview-item">
+            <h4>インパクト</h4>
+            <p>トライアル期間中にニーズの可視化と改善点の洗い出しを行い、常時設置に向けた体制づくりを進行。学生主体の取り組みとして学内の関心が高まり、継続的なサポート体制の構築へとつながっている。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h3>トピック</h3>
+        <ul class="topic-list">
+          <li class="topic-item">
+            <h4>学外からの取材</h4>
+            <p>セルフプロジェクトの取り組みについて、わかもと製薬と毎日新聞の2社から取材を受けた。学外からの反響が学生のモチベーション向上につながり、活動の社会的意義も共有できた。</p>
+          </li>
+          <li class="topic-item">
+            <h4>実機の作製と設置</h4>
+            <p>初期メンバーが中心となり、自作した配布機を学内に設置。プロジェクトの継続を見据え、運用マニュアルの整備や後輩への引き継ぎにも注力している。</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cta" style="margin-top:24px; justify-content: center;">
+        <a class="btn-ghost" href="../index.html#projects">← Projectsへ戻る</a>
+      </div>
+
+      <div class="poster-area">
+        <img class="poster" src="../assets/img/poster_menstrual_alt.png" alt="生理用品無料配布プロジェクト">
+        <h4>現在は常時設置に向け、初期メンバーからの引き継ぎやトライアルを受けた改善に励んでいる</h4>
+      </div>
     </div>
-    <div class="project-section">
-      <h3>実機の作製と設置</h3>
-      <p>理工学部生の強みを活かし、自分たちで実機システムを作製！ プロジェクトを始動したメンバーが卒業する前に、設置することができた。</p>
-      <p><strong>トライアル期間:</strong> 2025/1/20–1/25</p>
-    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="small">© 2025 Hirameki Lab</div>
   </div>
-  
-  <div class="detail" style="text-align: center; margin-top: 24px;">
-    <img class="poster" src="../assets/img/poster_menstrual_alt.png" alt="生理用品無料配布プロジェクト" style="border-radius: var(--radius); margin-bottom: 24px;">
-    <h4>現在は常時設置に向け、初期メンバーからの引き継ぎやトライアルを受けた改善に励んでいる</h4>
-  </div>
-  
-  <div class="cta" style="margin-top:24px; justify-content: center;"><a class="btn-ghost" href="../index.html#projects">← Projectsへ戻る</a></div>
-
-</div></section></main>
-<footer><div class="container"><div class="small">© 2025 Hirameki Lab</div></div></footer>
-<script src="../assets/js/app.js" defer></script></body></html>
+</footer>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>
