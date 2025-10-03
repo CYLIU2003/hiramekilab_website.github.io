@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>発車表示版 | ひらめきラボ</title>
+  <meta name="description" content="尾瀬・檜枝岐村での実証実験に向けて開発中の発車表示版アプリ。">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="../index.html#top"><img alt="Hirameki Lab" src="../assets/img/logo.svg"><strong>ひらめきラボ</strong></a>
+    <nav class="nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#members">Members</a>
+      <a href="../tools.html">便利ツール</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact" class="btn">Contact</a>
+      <div class="theme-switch">
+        <label for="themeSelect">Theme</label>
+        <select id="themeSelect" class="theme-select" aria-label="テーマ切替">
+          <option value="light">ライト</option>
+          <option value="dark">ダーク</option>
+          <option value="eco">エコ</option>
+        </select>
+      </div>
+    </nav>
+    <button class="toggle" aria-label="メニュー">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding: 60px 0 40px;">
+    <div class="container">
+      <div class="headline" style="text-align: center;">
+        <span class="kicker">Departure Board Demo</span>
+        <h1>発車表示版（デモ）</h1>
+        <p class="lead">地域交通の可視化と回遊促進を目指して</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <div class="container">
+      <p style="text-align: center; margin-bottom: 32px;">尾瀬・檜枝岐村での実証実験に向けて開発中の発車表示版アプリです。バス、鉄道、シャトルなどの運行情報を一覧で確認でき、観光客や地域住民の移動をサポートします。</p>
+      
+      <div class="board" style="margin-top: 24px;">
+        <div class="row"><div class="cell line">会津バス</div><div class="cell dest">檜枝岐役場 → 御池 / 尾瀬口</div><div class="cell time">08:35 発</div><div class="cell status">運行中</div></div>
+        <div class="row"><div class="cell line">只見線</div><div class="cell dest">只見 → 会津若松</div><div class="cell time">11:12 発</div><div class="cell status">のりつぎ案内</div></div>
+        <div class="row"><div class="cell line">シャトル</div><div class="cell dest">御池 → 沼山峠</div><div class="cell time">12:40 発</div><div class="cell status">繁忙期増便</div></div>
+      </div>
+      
+      <p class="small" style="margin-top:16px; text-align: center;">※ 実データ接続版は開発中です。</p>
+    </div>
+  </section>
+
+  <section id="background" style="background: var(--chipbg); padding: 60px 0;">
+    <div class="container">
+      <div class="project-section" style="background: var(--bg); border: 1px solid var(--stroke); border-radius: var(--radius); padding: 32px; max-width: 900px; margin: 0 auto;">
+        <h2 style="margin-top: 0;">開発の背景</h2>
+        <p>檜枝岐村は豊かな自然と温泉で知られる観光地ですが、公共交通の運行情報が分散しており、観光客が次の移動手段を見つけにくいという課題がありました。この発車表示版は、バス・鉄道・シャトルの情報を一箇所に集約し、スムーズな移動と地域内の回遊性向上を支援します。</p>
+        
+        <h3 style="margin-top: 32px;">主な機能（開発予定）</h3>
+        <ul style="margin-top: 16px;">
+          <li>リアルタイムの運行情報表示</li>
+          <li>遅延・運休情報の通知</li>
+          <li>乗り継ぎ案内の表示</li>
+          <li>季節・イベントに応じた臨時便の案内</li>
+          <li>多言語対応（日本語・英語・中国語など）</li>
+        </ul>
+
+        <h3 style="margin-top: 32px;">期待される効果</h3>
+        <ul style="margin-top: 16px;">
+          <li>観光客の利便性向上による満足度の向上</li>
+          <li>公共交通の利用促進</li>
+          <li>地域内の回遊性向上と観光振興</li>
+          <li>交通事業者の情報発信力強化</li>
+        </ul>
+
+        <h3 style="margin-top: 32px;">関連プロジェクト</h3>
+        <p style="margin-top: 16px;">このツールは、<a href="../projects/oze.html">尾瀬プロジェクト</a>の一環として開発されています。</p>
+      </div>
+
+      <div class="cta" style="margin-top:40px">
+        <a class="btn-primary" href="../index.html#contact">お問い合わせ</a>
+        <a class="btn-ghost" href="../projects/oze.html">尾瀬プロジェクトを見る</a>
+        <a class="btn-ghost" href="../tools.html">ツール一覧に戻る</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container"><div class="small">© 2025 Hirameki Lab, Tokyo City University.</div></div></footer>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>
