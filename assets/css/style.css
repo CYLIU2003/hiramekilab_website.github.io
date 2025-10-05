@@ -52,6 +52,21 @@ background:radial-gradient(1000px 700px at 80% -10%,var(--grad1),transparent 60%
 .member-card .chip{font-size:11px;border:1px solid var(--stroke);border-radius:999px;padding:.2rem .45rem;color:var(--chiptext);background:var(--chipbg)}
 .member-card .more{display:inline-block;margin-top:10px;border:1px solid var(--stroke);border-radius:10px;padding:.35rem .6rem;font-size:12px}
 .member-card .more:hover{border-color:var(--brand)}
+.member-filter{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 24px}
+.member-filter__button{border:1px solid var(--stroke);border-radius:999px;padding:.45rem 1rem;background:var(--card);font-size:13px;cursor:pointer;transition:background .18s ease,border-color .18s ease,color .18s ease}
+.member-filter__button:is(:hover,:focus-visible){border-color:var(--brand)}
+.member-filter__button.is-active{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#041016;border-color:transparent}
+.member-groups{display:grid;gap:36px}
+.member-group__title{margin:0 0 16px;border-bottom:1px solid var(--stroke);padding-bottom:6px;font-size:18px}
+.member-group[hidden]{display:none}
+.profile-detail .profile-text{display:grid;gap:12px}
+.profile-detail .profile-text h2{margin-bottom:4px}
+.profile-detail .profile-text .small{margin-bottom:4px}
+.profile-detail .profile-lead{margin:0 0 12px}
+.profile-detail .profile-section{margin-top:16px}
+.profile-detail .profile-section h3{margin:0 0 8px;font-size:15px}
+.profile-detail .profile-section ul{margin:0;padding-left:18px}
+.profile-detail .profile-section li{margin:.25em 0}
 .detail{background:linear-gradient(var(--card),var(--card)) padding-box;border:1px solid var(--stroke);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-top:22px}
 .detail-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
 .detail .poster{width:100%;height:auto;border:1px solid var(--stroke);border-radius:14px}
