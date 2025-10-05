@@ -1,5 +1,8 @@
-<!doctype html><html lang="ja" data-theme="light"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>山小屋1週間リゾートバイト | ひらめきラボ</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
@@ -11,92 +14,180 @@
     margin-bottom: 24px;
   }
   .project-header h2 {
-    font-size: clamp(22px, 4vw, 30px);
+    font-size: clamp(24px, 4vw, 32px);
     margin-bottom: 4px;
   }
   .project-header .subtitle {
     font-size: 18px;
     font-weight: 600;
   }
-  .project-section {
+  .project-body {
+    display: grid;
+    gap: 24px;
+  }
+  .project-block {
     background: var(--chipbg);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
-    padding: 16px;
-    margin-top: 20px;
+    padding: 20px;
   }
-  .project-section h3 {
-    background: var(--brand);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 999px;
-    display: inline-block;
+  .project-block h3 {
     font-size: 18px;
+    font-weight: 700;
     margin-bottom: 12px;
   }
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 22px;
+  .project-block p {
+    margin: 0;
+    line-height: 1.7;
   }
-  .date-badge {
-    background-color: #ffc0cb; /* Pink background */
-    color: #333;
-    padding: 8px 12px;
-    border-radius: 12px;
-    font-weight: bold;
+  .detail-grid {
+    display: grid;
+    gap: 16px;
+  }
+  .detail-grid h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .topic-item {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius);
+    padding: 16px;
+    border: 1px solid var(--stroke);
+  }
+  .topic-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .topic-item ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+  }
+  .poster-area {
     text-align: center;
+    margin-top: 32px;
+  }
+  .poster-area img {
+    border-radius: var(--radius);
+    max-width: 100%;
+    height: auto;
     margin-bottom: 16px;
   }
   @media (min-width: 768px) {
-    .project-grid {
-      grid-template-columns: 1fr 1fr;
+    .detail-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
-</head><body>
-<header class="header"><div class="container nav">
-<a class="brand" href="../index.html#members"><img alt="Hirameki Lab" src="../assets/img/logo.svg"><strong>ひらめきラボ</strong></a>
-<nav class="nav-links"><a href="../index.html#projects">Projects</a><a href="../index.html#members">Members</a><a href="../tools.html">便利ツール</a><a href="../index.html#about">About</a><a href="../index.html#contact" class="btn">Contact</a>
-<div class="theme-switch"><label for="themeSelect">Theme</label><select id="themeSelect" class="theme-select"><option value="light">ライト</option><option value="dark">ダーク</option><option value="eco">エコ</option></select></div>
-</nav><button class="toggle" aria-label="メニュー">Menu</button></div></header>
-<main><section><div class="container">
-  <div class="project-header">
-    <p class="small">セルフプロジェクトの活動報告</p>
-    <h2>檜枝岐村活性化に向けての第一歩</h2>
-    <p class="subtitle">〜山小屋1週間リゾートバイト計画〜</p>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="../index.html#members">
+      <img alt="Hirameki Lab" src="../assets/img/logo.svg">
+      <strong>ひらめきラボ</strong>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#members">Members</a>
+      <a href="../tools.html">便利ツール</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact" class="btn">Contact</a>
+      <div class="theme-switch">
+        <label for="themeSelect">Theme</label>
+        <select id="themeSelect" class="theme-select">
+          <option value="light">ライト</option>
+          <option value="dark">ダーク</option>
+          <option value="eco">エコ</option>
+        </select>
+      </div>
+    </nav>
+    <button class="toggle" aria-label="メニュー">Menu</button>
   </div>
-  
-  <div class="date-badge">2025年8/6-8/13 尾瀬沼ヒュッテ</div>
+</header>
+<main>
+  <section>
+    <div class="container">
+      <div class="project-header">
+        <p class="small">セルフプロジェクトの活動報告</p>
+        <h2>檜枝岐村活性化に向けての第一歩</h2>
+        <p class="subtitle">〜山小屋1週間リゾートバイト計画〜</p>
+      </div>
 
-  <div class="project-section">
-    <h3>プロローグ</h3>
-    <p>昨年夏、"檜枝岐村がもっと活性化するにはどのような施策"があるかというお題でアイディアソンを行った。そこで若者からの認知度向上ということに焦点を当て、檜枝岐村の魅力を知るにはまずは学生が手軽に滞在できる企画が良いのではということで生まれたリゾートバイト計画。提案から1年で実現することが叶ったため、今回は第1号として報告する。</p>
-  </div>
+      <div class="project-body">
+        <div class="project-block">
+          <h3>1）活動名</h3>
+          <p>山小屋1週間リゾートバイト計画</p>
+        </div>
+        <div class="project-block">
+          <h3>2）活動期間</h3>
+          <p>2025年8月6日〜8月13日（尾瀬沼ヒュッテ）</p>
+        </div>
+        <div class="project-block">
+          <h3>3）中心学生</h3>
+          <p>檜枝岐村活性化プロジェクトの有志学生</p>
+        </div>
+        <div class="project-block">
+          <h3>4）概要</h3>
+          <div class="detail-grid">
+            <div>
+              <h4>背景</h4>
+              <p>2024年夏のアイデアソンで、若者の認知度向上に向けた施策として山小屋でのリゾートバイト案が誕生。檜枝岐村の魅力を体験する入り口として学生が滞在できる仕組みを整えることを目指した。</p>
+            </div>
+            <div>
+              <h4>内容</h4>
+              <p>尾瀬沼ヒュッテで1週間の勤務を実施し、接客や清掃などの業務を担当。全国から集まるスタッフと協働しながら、日々のオペレーションを経験し、現地の暮らしを体験した。</p>
+            </div>
+            <div>
+              <h4>インパクト</h4>
+              <p>提案から1年で実現した第1号の試みとして、村と学生の距離をぐっと縮めた。現場で得た学びを今後の企画づくりや後続メンバーへの引き継ぎに活かし、活動の継続性を高めている。</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-block">
+          <h3>5）トピック</h3>
+          <ul class="topic-list">
+            <li class="topic-item">
+              <h4>山小屋での仕事</h4>
+              <p>山に登るお客さまを送り出す瞬間にやりがいを感じながら、仲間と共に日々の業務を遂行。全国各地から集まったスタッフと過ごす時間が刺激となった。</p>
+              <ul>
+                <li><strong>5:30〜7:00</strong> 朝食対応</li>
+                <li><strong>9:00〜11:00</strong> 館内清掃</li>
+                <li><strong>15:00〜18:30</strong> 夕食対応</li>
+              </ul>
+            </li>
+            <li class="topic-item">
+              <h4>山の生活</h4>
+              <p>豊かな自然に囲まれた環境でデジタルデトックス効果も抜群。季節の花や珍しい生き物との出会いが、檜枝岐村の新たな魅力の発見につながった。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="project-grid">
-    <div class="project-section">
-      <h3>山小屋での仕事</h3>
-      <p>山に登るお客さんをお見送りできるのは大きなやりがい！ 全国各地から集まる仲間と共に過ごし、毎食食卓を囲む事で、新たな出会いに刺激を受けた。</p>
-      <ul style="list-style: none; padding-left: 0;">
-        <li><strong>5:30-7:00</strong> 朝食</li>
-        <li><strong>9:00-11:00</strong> 館内清掃</li>
-        <li><strong>15:00-18:30</strong> 夕食</li>
-      </ul>
+      <div class="cta" style="margin-top:24px; justify-content: center;">
+        <a class="btn-ghost" href="../index.html#projects">← Projectsへ戻る</a>
+      </div>
+
+      <div class="poster-area">
+        <img class="poster" src="../assets/img/ozeri_resortbaito.jpg" alt="山小屋1週間リゾートバイト">
+        <h4>檜枝岐村の魅力を体感＆尾瀬の自然の美しさを満喫</h4>
+      </div>
     </div>
-    <div class="project-section">
-      <h3>山の生活</h3>
-      <p>豊かな自然に囲まれ、見渡すと一面緑。デジタルデトックス効果も◎ 四季折々、季節の花が沢山。珍しい虫や花も見られて幻想的。</p>
-    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="small">© 2025 Hirameki Lab</div>
   </div>
-
-  <div class="detail" style="text-align: center; margin-top: 24px;">
-    <img class="poster" src="../assets/img/ozeri_resortbaito.jpg" alt="山小屋1週間リゾートバイト" style="border-radius: var(--radius); margin-bottom: 24px;">
-    <h4>檜枝岐村の魅力を体感＆尾瀬の自然の美しさを満喫</h4>
-  </div>
-  
-  <div class="cta" style="margin-top:24px; justify-content: center;"><a class="btn-ghost" href="../index.html#projects">← Projectsへ戻る</a></div>
-
-</div></section></main>
-<footer><div class="container"><div class="small">© 2025 Hirameki Lab</div></div></footer>
-<script src="../assets/js/app.js" defer></script></body></html>
+</footer>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>
