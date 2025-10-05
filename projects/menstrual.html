@@ -21,11 +21,18 @@
     font-size: 18px;
     font-weight: 600;
   }
+<<<<<<< HEAD
   .project-meta {
+=======
+  .project-body {
+    display: grid;
+    gap: 24px;
+  }
+  .project-block {
+>>>>>>> codex/create-project-template-layout-sqokg6
     background: var(--chipbg);
     border: 1px solid var(--stroke);
-    border-radius: var(--radius);
-    padding: 20px;
+      .project-body {
     display: grid;
     gap: 16px;
     margin-bottom: 28px;
@@ -34,36 +41,29 @@
     display: grid;
     gap: 8px;
   }
-  .project-meta dt {
-    font-weight: 700;
-    color: var(--brand);
-    letter-spacing: 0.02em;
-  }
-  .project-meta dd {
-    margin: 0;
-    font-weight: 600;
-  }
-  .project-section {
-    background: var(--chipbg);
-    border: 1px solid var(--stroke);
-    border-radius: var(--radius);
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .project-section h3 {
-    background: var(--brand);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 999px;
-    display: inline-block;
-    font-size: 18px;
-    margin-bottom: 16px;
   }
   .overview-grid {
     display: grid;
     gap: 20px;
   }
   .overview-item h4 {
+=======
+  }
+  .project-block h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .project-block p {
+    margin: 0;
+    line-height: 1.7;
+  }
+  .detail-grid {
+    display: grid;
+    gap: 16px;
+  }
+  .detail-grid h4 {
+>>>>>>> codex/create-project-template-layout-sqokg6
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -96,6 +96,7 @@
     height: auto;
     margin-bottom: 16px;
   }
+<<<<<<< HEAD
   @media (min-width: 640px) {
     .project-meta .meta-row {
       grid-template-columns: 180px 1fr;
@@ -104,6 +105,10 @@
   }
   @media (min-width: 768px) {
     .overview-grid {
+=======
+  @media (min-width: 768px) {
+    .detail-grid {
+>>>>>>> codex/create-project-template-layout-sqokg6
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -143,6 +148,7 @@
         <p class="subtitle">〜女子学生も過ごしやすい学校作り〜</p>
       </div>
 
+<<<<<<< HEAD
       <dl class="project-meta">
         <div class="meta-row">
           <dt>活動名</dt>
@@ -188,6 +194,51 @@
             <p>初期メンバーが中心となり、自作した配布機を学内に設置。プロジェクトの継続を見据え、運用マニュアルの整備や後輩への引き継ぎにも注力している。</p>
           </li>
         </ul>
+=======
+      <div class="project-body">
+        <div class="project-block">
+          <h3>1）活動名</h3>
+          <p>生理用品無料配布プロジェクト</p>
+        </div>
+        <div class="project-block">
+          <h3>2）活動期間</h3>
+          <p>トライアル期間 2025/1/20–1/25（常時設置に向け準備中）</p>
+        </div>
+        <div class="project-block">
+          <h3>3）中心学生</h3>
+          <p>理工学部の有志学生チーム</p>
+        </div>
+        <div class="project-block">
+          <h3>4）概要</h3>
+          <div class="detail-grid">
+            <div>
+              <h4>背景</h4>
+              <p>理系の学部が多い本学では女性特有の悩みを相談できる相手が少なく、デリケートな話題である生理についても共有する機会が限られていた。そこで、悩みを少しでも解消し、学校生活を快適にすることを目的にプロジェクトを始動した。</p>
+            </div>
+            <div>
+              <h4>内容</h4>
+              <p>理工学部生の強みを活かして配布機のシステムを自作し、利用方法や設置場所、備品の補充オペレーションを含めた仕組みを整備。初期メンバーが卒業する前に設置まで完了させ、利用者の声を収集できる環境を整えた。</p>
+            </div>
+            <div>
+              <h4>インパクト</h4>
+              <p>トライアル期間中にニーズの可視化と改善点の洗い出しを行い、常時設置に向けた体制づくりを進行。学生主体の取り組みとして学内の関心が高まり、継続的なサポート体制の構築へとつながっている。</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-block">
+          <h3>5）トピック</h3>
+          <ul class="topic-list">
+            <li class="topic-item">
+              <h4>学外からの取材</h4>
+              <p>セルフプロジェクトの取り組みについて、わかもと製薬と毎日新聞の2社から取材を受けた。学外からの反響が学生のモチベーション向上につながり、活動の社会的意義も共有できた。</p>
+            </li>
+            <li class="topic-item">
+              <h4>実機の作製と設置</h4>
+              <p>初期メンバーが中心となり、自作した配布機を学内に設置。プロジェクトの継続を見据え、運用マニュアルの整備や後輩への引き継ぎにも注力している。</p>
+            </li>
+          </ul>
+        </div>
+>>>>>>> codex/create-project-template-layout-sqokg6
       </div>
 
       <div class="cta" style="margin-top:24px; justify-content: center;">

@@ -17,14 +17,21 @@
     font-size: clamp(24px, 4vw, 32px);
     margin-bottom: 4px;
   }
+<<<<<<< HEAD
   .project-meta {
+=======
+  .project-body {
+    display: grid;
+    gap: 24px;
+  }
+  .project-block {
+>>>>>>> codex/create-project-template-layout-sqokg6
     background: var(--chipbg);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
     padding: 20px;
-    display: grid;
-    gap: 16px;
-    margin-bottom: 28px;
+<<<<<<< HEAD
+      .project-body {
   }
   .project-meta .meta-row {
     display: grid;
@@ -33,37 +40,54 @@
   .project-meta dt {
     font-weight: 700;
     color: var(--brand);
-    letter-spacing: 0.02em;
   }
-  .project-meta dd {
-    margin: 0;
-    font-weight: 600;
-  }
-  .project-section {
-    background: var(--chipbg);
-    border: 1px solid var(--stroke);
-    border-radius: var(--radius);
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .project-section h3 {
-    background: var(--brand);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 999px;
-    display: inline-block;
+  .project-block h3 {
     font-size: 18px;
-    margin-bottom: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
   }
-  .overview-grid {
+  .project-block p {
+    margin: 0;
+    line-height: 1.7;
+  }
+  .detail-grid {
     display: grid;
-    gap: 20px;
+    gap: 16px;
   }
-  .overview-item h4 {
+  .detail-grid h4 {
+>>>>>>> codex/create-project-template-layout-sqokg6
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 8px;
   }
+<<<<<<< HEAD
+=======
+  .project-note {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: calc(var(--radius) / 1.2);
+  }
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .timeline li {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius);
+    padding: 16px;
+    border: 1px solid var(--stroke);
+  }
+  .timeline strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: var(--brand);
+  }
+>>>>>>> codex/create-project-template-layout-sqokg6
   .topic-list {
     list-style: none;
     padding: 0;
@@ -92,6 +116,7 @@
     height: auto;
     margin-bottom: 16px;
   }
+<<<<<<< HEAD
   @media (min-width: 640px) {
     .project-meta .meta-row {
       grid-template-columns: 180px 1fr;
@@ -100,6 +125,10 @@
   }
   @media (min-width: 768px) {
     .overview-grid {
+=======
+  @media (min-width: 768px) {
+    .detail-grid {
+>>>>>>> codex/create-project-template-layout-sqokg6
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -136,6 +165,7 @@
       <div class="project-header">
         <p class="small">セルフプロジェクトの活動報告</p>
         <h2>尾瀬・檜枝岐村 活性化プロジェクト</h2>
+<<<<<<< HEAD
       </div>
 
       <dl class="project-meta">
@@ -183,6 +213,110 @@
             <p>山菜料理をはじめとした地元食材を活かしたメニューを学生が体験し、情報発信や提案に活かしている。地域食文化への理解を深めることで、食からの活性化アイデアにもつながった。</p>
           </li>
         </ul>
+=======
+        <p class="subtitle">〜都市と山里の往復で循環をつくる〜</p>
+      </div>
+
+      <div class="project-body">
+        <div class="project-block">
+          <h3>1）活動名</h3>
+          <p>尾瀬・檜枝岐村 活性化プロジェクト</p>
+        </div>
+        <div class="project-block">
+          <h3>2）活動期間</h3>
+          <p>2024年度〜現在（2025年1月 教育連携協定 締結）</p>
+        </div>
+        <div class="project-block">
+          <h3>3）中心学生</h3>
+          <p>理工・環境・都市生活分野の有志学生チーム</p>
+        </div>
+        <div class="project-block">
+          <h3>4）概要</h3>
+          <div class="detail-grid">
+            <div>
+              <h4>背景</h4>
+              <p>尾瀬の玄関口である檜枝岐村は人口600人弱の山里。観光と暮らしを両立させるには都市部の視点も必要という課題感から、
+2024年度に現地を継続訪問して情報収集と関係構築をスタートした。</p>
+            </div>
+            <div>
+              <h4>内容</h4>
+              <p>村役場・観光協会・宿の方々と協働し、季節ごとのリサーチや滞在アイデアソンを実施。フィールドで試作したサイン計画や
+学生視点のプログラムを提案し、都市側でも発信イベントを展開した。</p>
+            </div>
+            <div>
+              <h4>インパクト</h4>
+              <p>2025年1月に東京都市大学と檜枝岐村が教育連携協定を締結。学生・自治体・観光事業者が同じ目線で議論する場が生まれ、
+次年度の体験プログラムや情報発信の共創体制が整いつつある。</p>
+            </div>
+          </div>
+          <div class="project-note">
+            <p class="small">※ 現地で得た一次情報はチームのNotionに集約し、学内メンバーが追随できる形で管理しています。</p>
+          </div>
+        </div>
+        <div class="project-block">
+          <h3>活動の流れ</h3>
+          <ul class="timeline">
+            <li>
+              <strong>2024年6月</strong>
+              <p>初回の現地フィールドワーク。村役場・商工会・観光協会へヒアリングし、課題とリソースを洗い出し。</p>
+            </li>
+            <li>
+              <strong>2024年9月</strong>
+              <p>秋の滞在でサイン計画のプロトタイピング。村内の動線調査とデータ収集を実施。</p>
+            </li>
+            <li>
+              <strong>2024年12月</strong>
+              <p>冬季の視察と合わせて、首都圏で檜枝岐村を紹介するトークイベントを開催。</p>
+            </li>
+            <li>
+              <strong>2025年1月</strong>
+              <p>教育連携協定を締結。共同プロジェクトの枠組みづくりと山小屋リゾートバイトの募集準備を進行。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h3>現地での学びと成果物</h3>
+          <div class="detail-grid">
+            <div>
+              <h4>サイン試作</h4>
+              <p>登山口と村内をつなぐ動線を可視化するため、停留所風の発車表示を製作。滞在者にテスト利用してもらい改善点を洗い出した。</p>
+            </div>
+            <div>
+              <h4>発信イベント</h4>
+              <p>世田谷キャンパスで「檜枝岐の冬を持ち帰る」展示を開催。雪景色や郷土料理を紹介し、都市側での共感者を増やした。</p>
+            </div>
+            <div>
+              <h4>次のトライアル</h4>
+              <p>夏季・冬季それぞれで滞在プログラムを立ち上げる準備中。学生が企画から運営まで担えるようマニュアル化を進めている。</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-block">
+          <h3>5）トピック</h3>
+          <ul class="topic-list">
+            <li class="topic-item">
+              <h4>季節ごとの景色</h4>
+              <p>緑の夏と純白の冬が広がる檜枝岐村は、山小屋やスノーシューなど季節に応じた楽しみが満載。温泉水が湧く地域ならではの
+温浴体験も人気で、年間を通して魅力を発信している。</p>
+            </li>
+            <li class="topic-item">
+              <h4>郷土料理</h4>
+              <p>山菜料理をはじめとした地元食材を活かしたメニューを学生が体験し、情報発信や提案に活かしている。地域食文化への理解
+を深めることで、食からの活性化アイデアにもつながった。</p>
+            </li>
+            <li class="topic-item">
+              <h4>学生視点の改善提案</h4>
+              <p>滞在者の動線を見える化する発車表示板の試作や、現地で使える観光UIの検証を実施。小さな改善を重ね、村の方と一緒に次
+のアクションへ進める体制を整えている。</p>
+            </li>
+            <li class="topic-item">
+              <h4>連携のこれから</h4>
+              <p>2025年度は山小屋リゾートバイトの定期化と、都市圏での共感者づくりを両輪で推進予定。村民の声を拾い上げながら、新た
+な参加プログラムの形を模索している。</p>
+            </li>
+          </ul>
+        </div>
+>>>>>>> codex/create-project-template-layout-sqokg6
       </div>
 
       <div class="cta" style="margin-top:24px; justify-content: center;">
